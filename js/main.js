@@ -1,3 +1,6 @@
+// Byt ut mot din publika länk från Render när den är skapad
+const API_URL = "https://dt207g-lab4-api.onrender.com";
+
 // 1. Registrera ny användare
 const registerForm = document.getElementById("register-form");
 if (registerForm) {
@@ -9,7 +12,7 @@ if (registerForm) {
         const errorEl = document.getElementById("error-message");
         const successEl = document.getElementById("success-message");
 
-        const response = await fetch("http://localhost:3000/api/register", {
+        const response = await fetch(`${API_URL}/api/register`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ username, password })
@@ -38,7 +41,7 @@ if (loginForm) {
         const errorEl = document.getElementById("error-message");
         const successEl = document.getElementById("success-message");
 
-        const response = await fetch("http://localhost:3000/api/login", {
+        const response = await fetch(`${API_URL}/api/login`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ username, password })
@@ -63,7 +66,7 @@ if (usersList) {
     const token = sessionStorage.getItem("token");
 
     async function getProtected() {
-        const response = await fetch("http://localhost:3000/api/protected", {
+        const response = await fetch(`${API_URL}/api/protected`, {
             headers: { "Authorization": "Bearer " + token }
         });
 
