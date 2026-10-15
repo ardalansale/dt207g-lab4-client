@@ -5,7 +5,7 @@ En fristående webbplats med inloggnings- och registreringsfunktioner samt en sk
 https://github.com/ardalansale/dt207g-lab-frontend
 
 ## Publicerad webbplats
-https://dt207g-lab3.netlify.app/
+https://dt207g-lab4.netlify.app/
 
 ## Funktionalitet
 - Formulär för att skapa konto och logga in med enkel klientvalidering.
