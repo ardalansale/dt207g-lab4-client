@@ -2,7 +2,7 @@
 En fristående webbplats med inloggnings- och registreringsfunktioner samt en skyddad undersida som konsumerar den separata backend-webbtjänsten via Fetch API och JWT.
 
 ## GitHub-repo
-https://github.com/ardalansale/dt207g-lab-frontend
+https://github.com/ardalansale/dt207g-lab4-client
 
 ## Publicerad webbplats
 https://dt207g-lab4.netlify.app/
